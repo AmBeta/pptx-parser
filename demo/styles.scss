@@ -1,0 +1,130 @@
+.slides {
+  section {
+    width: 100%;
+    /*max-width: 920px;*/
+    height: 690px;
+    position: relative;
+    border: 1px solid #333;
+    background-color: #efefef;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #aaa;
+    overflow: hidden;
+
+    /*transform: scale(0.85);*/
+    div.block {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      z-index: 1;
+    }
+
+    div.content {
+      display: flex;
+      flex-direction: column;
+      /*
+      justify-content: center;
+      align-items: flex-end;
+      */
+    }
+
+    div.has-link {
+      cursor: pointer;
+
+      &:hover {
+        filter: opacity(.6);
+      }
+    }
+
+    div.v-up {
+      justify-content: flex-start;
+    }
+
+    div.v-mid {
+      justify-content: center;
+    }
+
+    div.v-down {
+      justify-content: flex-end;
+    }
+
+    div.h-left {
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    div.h-mid {
+      align-items: center;
+      text-align: center;
+    }
+
+    div.h-right {
+      align-items: flex-end;
+      text-align: right;
+    }
+
+    div.up-left {
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    div.up-center {
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    div.up-right {
+      justify-content: flex-start;
+      align-items: flex-end;
+    }
+
+    div.center-left {
+      justify-content: center;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    div.center-center {
+      justify-content: center;
+      align-items: center;
+    }
+
+    div.center-right {
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    div.down-left {
+      justify-content: flex-end;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    div.down-center {
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    div.down-right {
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+
+    table {
+      position: absolute;
+
+      th,
+      td {
+        border: 1px solid #000;
+      }
+    }
+
+    svg.drawing {
+      position: absolute;
+      overflow: visible;
+      z-index: -1;
+    }
+  }
+}
